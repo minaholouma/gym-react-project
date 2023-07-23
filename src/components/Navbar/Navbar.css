@@ -1,0 +1,34 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 10rem;
+    height: 3rem;
+}
+
+.Navbar-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    color: #fff;
+}
+
+.Navbar-menu li:hover {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .Navbar> :nth-child(2) {
+        position: fixed;
+        right: 2rem;
+        z-index: 111;
+    }
+    .Navbar-menu {
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+    }
+}
